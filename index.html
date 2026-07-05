@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amigurumis Hechos a Mano</title>
+    <meta
+      name="description"
+      content="Amigurumis personalizados, suaves y hechos a mano para regalos, colecciones y momentos especiales."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Quicksand:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Navegacion principal">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Hilito Mágico</span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#personalizados">Personalizados</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img
+          class="hero-image"
+          src="assets/hero-amigurumis.png"
+          alt="Amigurumis tejidos a mano sobre una mesa de taller con estambres y ganchillos"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Amigurumis hechos a mano</p>
+          <h1>Personajes tiernos, tejidos puntada por puntada.</h1>
+          <p class="hero-copy">
+            Regalos personalizados, muñecos de colección y detalles suaves para bebés, parejas,
+            familias y fans de lo adorable.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#catalogo">Ver catálogo</a>
+            <a class="button secondary" href="#personalizados">Cotizar pedido</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" aria-label="Beneficios">
+        <div class="intro-item">
+          <strong>100% artesanal</strong>
+          <span>Cada pieza se teje bajo pedido con acabados cuidados.</span>
+        </div>
+        <div class="intro-item">
+          <strong>Personalizable</strong>
+          <span>Elige colores, tamaño, accesorios y detalles especiales.</span>
+        </div>
+        <div class="intro-item">
+          <strong>Listo para regalar</strong>
+          <span>Empaque bonito y tarjeta con dedicatoria opcional.</span>
+        </div>
+      </section>
+
+      <section class="section catalog" id="catalogo">
+        <div class="section-heading">
+          <p class="eyebrow">Favoritos del taller</p>
+          <h2>Catálogo inicial</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-art bunny" aria-hidden="true">
+              <span></span>
+            </div>
+            <div class="product-body">
+              <h3>Conejito clásico</h3>
+              <p>Orejas largas, moñito opcional y colores suaves para regalo de nacimiento.</p>
+              <div class="product-meta">
+                <span>Desde $320</span>
+                <span>18 cm</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-art bear" aria-hidden="true">
+              <span></span>
+            </div>
+            <div class="product-body">
+              <h3>Osito con suéter</h3>
+              <p>Un favorito abrazable con suéter tejido, inicial bordada o mini bufanda.</p>
+              <div class="product-meta">
+                <span>Desde $380</span>
+                <span>22 cm</span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-art dino" aria-hidden="true">
+              <span></span>
+            </div>
+            <div class="product-body">
+              <h3>Dino pastel</h3>
+              <p>Pequeño, colorido y perfecto para decorar escritorios, cunas o repisas.</p>
+              <div class="product-meta">
+                <span>Desde $350</span>
+                <span>20 cm</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="custom section" id="personalizados">
+        <div class="custom-copy">
+          <p class="eyebrow">Pedidos personalizados</p>
+          <h2>Traemos tu idea al mundo de estambre.</h2>
+          <p>
+            Podemos adaptar mascotas, personajes, profesiones, bebés, parejas o recuerdos
+            familiares. Mientras más referencias compartas, más fiel queda el resultado.
+          </p>
+          <ul class="check-list">
+            <li>Paleta de color a tu gusto</li>
+            <li>Bordado de nombre o iniciales</li>
+            <li>Accesorios miniatura</li>
+            <li>Opciones para bebés sin piezas rígidas</li>
+          </ul>
+        </div>
+        <form class="quote-form" aria-label="Formulario de cotizacion">
+          <label>
+            Tipo de pieza
+            <select>
+              <option>Muñeco personalizado</option>
+              <option>Mascota</option>
+              <option>Set de regalo</option>
+              <option>Decoración</option>
+            </select>
+          </label>
+          <label>
+            Tamaño aproximado
+            <select>
+              <option>Pequeño, 12 a 15 cm</option>
+              <option>Mediano, 18 a 25 cm</option>
+              <option>Grande, 30 cm o más</option>
+            </select>
+          </label>
+          <label>
+            Detalles importantes
+            <textarea placeholder="Colores, fecha, accesorios o idea principal"></textarea>
+          </label>
+          <button type="button">Solicitar cotización</button>
+        </form>
+      </section>
+
+      <section class="section process" aria-label="Proceso">
+        <div class="section-heading">
+          <p class="eyebrow">Proceso</p>
+          <h2>De la idea al abrazo</h2>
+        </div>
+        <div class="steps">
+          <div>
+            <span>01</span>
+            <h3>Cuéntanos la idea</h3>
+            <p>Compartes referencias, colores y el uso que tendrá la pieza.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Confirmamos diseño</h3>
+            <p>Definimos tamaño, materiales, tiempo de tejido y precio final.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Tejemos con calma</h3>
+            <p>Recibes avances antes del armado final para ajustar detalles clave.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contacto">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>¿Listos para elegir estambres?</h2>
+          <p>Escríbenos para revisar disponibilidad, tiempos de entrega y diseños especiales.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://wa.me/" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="button secondary" href="mailto:hola@hilitomagico.com">Correo</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
