@@ -1,20 +1,18 @@
 # LoveAmigurumis
 
-Pagina estatica para vender patrones PDF, kits con estambre, cursos en linea y productos artesanales sobre pedido.
+Pagina estatica para vender patrones PDF, kits con estambre y productos artesanales sobre pedido.
 
 ## Archivos principales
 
 - `index.html`: contenido del sitio.
 - `styles.css`: diseno visual.
 - `assets/hero-amigurumis.png`: imagen de portada.
-- `docs/index.html`: respaldo para GitHub Pages si se publica desde `/docs`.
 
 ## Modelo de venta
 
 - Producto digital: patron PDF o ebook desde $49 MXN.
 - Kit completo: PDF + estambre/materiales base, aprox. $500-$600 MXN.
 - Producto sobre pedido: precio por negociacion segun cantidad, complejidad y materiales.
-- Curso en linea: cupos limitados, apartado de lugar, pago en linea y grabacion reutilizable como descarga o curso bajo demanda.
 
 ## Categorias planeadas
 
@@ -24,7 +22,6 @@ Pagina estatica para vender patrones PDF, kits con estambre, cursos en linea y p
 - Accesorios
 - Temporadas
 - Ebooks por familias o colecciones
-- Cursos por proyecto o tecnica
 
 ## Como publicarlo en GitHub Pages
 
@@ -52,4 +49,3 @@ https://atelier-3316.github.io/LoveAmigurumis/
 - Definir WhatsApp, Instagram y metodos de pago detallados.
 - Crear fichas por familia: animales, personajes, temporadas y minis.
 - Agregar videos o reels al espacio publicitario de portada.
-- Definir temario, cupos y precio de los primeros cursos en linea.
