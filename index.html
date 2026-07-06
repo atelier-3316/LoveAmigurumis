@@ -112,8 +112,8 @@
           <article class="product-card product-card-real">
             <a
               class="product-photo-link"
-              href="mailto:artisticmione@gmail.com?subject=Comprar%20PDF%20Le%C3%B3n%20Valiente"
-              aria-label="Comprar PDF Leon Valiente"
+              href="#descarga-leon"
+              aria-label="Ir a la descarga del PDF Leon Valiente"
             >
               <img
                 src="assets/leon-valiente.png"
@@ -131,10 +131,21 @@
                 <strong>PDF de prueba desde $49</strong>
                 <span>Nivel principiante - 4 a 6 horas</span>
               </div>
-              <div class="product-actions">
-                <a class="buy-link" href="mailto:artisticmione@gmail.com?subject=Comprar%20PDF%20Leon%20Valiente">Comprar PDF de prueba</a>
-                <a class="sample-link" href="downloads/leon-valiente.pdf" target="_blank" rel="noopener">Ver PDF ejemplo</a>
-              </div>
+              <form class="download-gate" id="descarga-leon" action="https://formsubmit.co/artisticmione@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nuevo correo para descargar Leon Valiente" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_next" value="https://atelier-3316.github.io/LoveAmigurumis/downloads/leon-valiente.pdf" />
+                <input type="hidden" name="producto" value="Leon Valiente" />
+                <label for="email-leon">Deja tu correo para descargar el PDF</label>
+                <div class="download-row">
+                  <input id="email-leon" name="email" type="email" placeholder="tu@email.com" required />
+                  <button class="buy-link" type="submit">Dejar correo y descargar</button>
+                </div>
+                <p class="download-note" aria-live="polite">
+                  Por ahora es una descarga de prueba. El correo llega a LoveAmigurumis y despues conectaremos pago seguro.
+                </p>
+              </form>
             </div>
           </article>
           <article class="product-card featured">

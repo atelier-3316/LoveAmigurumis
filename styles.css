@@ -628,10 +628,46 @@ h3 {
   background: var(--rose-dark);
 }
 
+.download-gate,
 .product-actions {
   align-items: stretch;
   display: grid;
   gap: 10px;
+}
+
+.download-gate label {
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.download-row {
+  display: grid;
+  gap: 10px;
+}
+
+.download-row input {
+  background: #fff;
+  border: 1px solid rgba(123, 78, 58, 0.2);
+  border-radius: 999px;
+  color: var(--ink);
+  font: inherit;
+  min-height: 46px;
+  outline: none;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.download-row input:focus {
+  border-color: rgba(233, 111, 129, 0.8);
+  box-shadow: 0 0 0 4px rgba(233, 111, 129, 0.12);
+}
+
+.download-note {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  margin: 0;
 }
 
 .sample-link {
