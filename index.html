@@ -26,7 +26,7 @@
   <body>
     <header class="site-header" aria-label="Navegacion principal">
       <a class="brand" href="#inicio" aria-label="LoveAmigurumis inicio">
-        <span class="brand-mark" aria-hidden="true">LA</span>
+        <img class="brand-mark" src="assets/love-logo-perfil.png" alt="" aria-hidden="true" />
         <span>LoveAmigurumis</span>
       </a>
       <nav class="nav-links" aria-label="Secciones">
@@ -49,6 +49,11 @@
         <div class="hero-overlay"></div>
         <div class="hero-layout">
           <div class="hero-content">
+            <img
+              class="hero-logo"
+              src="assets/love-logo-principal.png"
+              alt="Logo LoVe con osito amigurumi abrazando una bola de estambre"
+            />
             <p class="eyebrow">Patrones PDF, kits y artesania tejida</p>
             <h1>Todo lo bonito que se puede tejer, en un solo lugar.</h1>
             <p class="hero-copy">
@@ -141,21 +146,9 @@
                   rel="noopener"
                 >Comprar por $19 MXN</a>
               </div>
-              <form class="download-gate" id="descarga-leon" action="https://formsubmit.co/artisticmione@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="Nuevo correo para descargar Leon Valiente" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="box" />
-                <input type="hidden" name="_next" value="https://atelier-3316.github.io/LoveAmigurumis/downloads/leon-valiente.pdf" />
-                <input type="hidden" name="producto" value="Leon Valiente" />
-                <label for="email-leon">Promocion: descarga de muestra dejando tu correo</label>
-                <div class="download-row">
-                  <input id="email-leon" name="email" type="email" placeholder="tu@email.com" required />
-                  <button class="sample-button" type="submit">Dejar correo y descargar</button>
-                </div>
-                <p class="download-note" aria-live="polite">
-                  La compra formal se procesa con Stripe. Esta descarga ayuda a probar y crear la lista de correos.
-                </p>
-              </form>
+              <p class="purchase-note">
+                Compra segura con Stripe. Al pagar, el cliente registra su correo y telefono para recibir soporte del pedido.
+              </p>
             </div>
           </article>
           <article class="product-card featured">

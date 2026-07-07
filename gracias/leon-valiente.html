@@ -25,15 +25,22 @@
           Tu patron PDF esta listo. Guarda el archivo en tu dispositivo para tenerlo siempre a la mano.
         </p>
         <div class="thank-you-actions">
-          <a class="button primary" href="../downloads/leon-valiente.pdf" target="_blank" rel="noopener">
+          <a id="download-pdf" class="button primary" href="../downloads/leon-valiente.pdf" target="_blank" rel="noopener">
             Descargar PDF
           </a>
           <a class="button secondary" href="../index.html#catalogo">Volver al catalogo</a>
         </div>
         <p class="thank-you-note">
-          Si tienes algun problema con la descarga, escribe a artisticmione@gmail.com.
+          La descarga debe abrirse automaticamente. Si no pasa, toca el boton Descargar PDF.
         </p>
       </section>
     </main>
+    <script>
+      window.addEventListener("load", () => {
+        window.setTimeout(() => {
+          document.getElementById("download-pdf").click();
+        }, 900);
+      });
+    </script>
   </body>
 </html>

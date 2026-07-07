@@ -65,18 +65,13 @@ a {
 }
 
 .brand-mark {
-  align-items: center;
-  background: linear-gradient(135deg, var(--rose), var(--berry));
+  background: #fff6ef;
   border: 2px solid #fff;
   border-radius: 50%;
   box-shadow: 0 8px 18px rgba(189, 66, 88, 0.24);
-  color: #fff;
-  display: inline-flex;
-  font-size: 0.68rem;
-  font-weight: 900;
   height: 36px;
-  justify-content: center;
-  letter-spacing: 0.02em;
+  object-fit: cover;
+  padding: 2px;
   width: 36px;
 }
 
@@ -139,6 +134,14 @@ a {
 
 .hero-content {
   max-width: 760px;
+}
+
+.hero-logo {
+  display: block;
+  filter: drop-shadow(0 16px 28px rgba(64, 44, 54, 0.12));
+  margin: 0 0 clamp(14px, 2.4vw, 24px);
+  max-width: min(360px, 58vw);
+  width: 100%;
 }
 
 .eyebrow {
@@ -628,42 +631,13 @@ h3 {
   background: var(--rose-dark);
 }
 
-.download-gate,
 .product-actions {
   align-items: stretch;
   display: grid;
   gap: 10px;
 }
 
-.download-gate label {
-  color: var(--ink);
-  font-size: 0.9rem;
-  font-weight: 900;
-}
-
-.download-row {
-  display: grid;
-  gap: 10px;
-}
-
-.download-row input {
-  background: #fff;
-  border: 1px solid rgba(123, 78, 58, 0.2);
-  border-radius: 999px;
-  color: var(--ink);
-  font: inherit;
-  min-height: 46px;
-  outline: none;
-  padding: 0 16px;
-  width: 100%;
-}
-
-.download-row input:focus {
-  border-color: rgba(233, 111, 129, 0.8);
-  box-shadow: 0 0 0 4px rgba(233, 111, 129, 0.12);
-}
-
-.download-note {
+.purchase-note {
   color: var(--muted);
   font-size: 0.86rem;
   line-height: 1.45;
@@ -683,25 +657,6 @@ h3 {
 }
 
 .sample-link:hover {
-  background: rgba(255, 247, 242, 0.8);
-}
-
-.sample-button {
-  align-items: center;
-  background: #fff;
-  border: 1px solid rgba(123, 78, 58, 0.22);
-  border-radius: 999px;
-  color: var(--ink);
-  cursor: pointer;
-  display: inline-flex;
-  font: inherit;
-  font-weight: 900;
-  justify-content: center;
-  min-height: 46px;
-  padding: 0 16px;
-}
-
-.sample-button:hover {
   background: rgba(255, 247, 242, 0.8);
 }
 
