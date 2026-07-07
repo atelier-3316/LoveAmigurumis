@@ -686,6 +686,25 @@ h3 {
   background: rgba(255, 247, 242, 0.8);
 }
 
+.sample-button {
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgba(123, 78, 58, 0.22);
+  border-radius: 999px;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 900;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 16px;
+}
+
+.sample-button:hover {
+  background: rgba(255, 247, 242, 0.8);
+}
+
 .product-meta {
   align-items: center;
   display: flex;
@@ -940,6 +959,52 @@ h3 {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.24);
   color: #fff;
+}
+
+.thank-you-page {
+  align-items: center;
+  background:
+    radial-gradient(circle at top left, rgba(233, 111, 129, 0.18), transparent 32%),
+    linear-gradient(135deg, #fff7f2, #f8e6dc 52%, #eef5ef);
+  display: flex;
+  min-height: 100vh;
+  padding: 28px;
+}
+
+.thank-you-panel {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(123, 78, 58, 0.16);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+  max-width: 720px;
+  padding: clamp(28px, 7vw, 64px);
+}
+
+.thank-you-panel h1 {
+  color: var(--ink);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.3rem, 7vw, 4.4rem);
+  line-height: 0.98;
+  margin: 0 0 18px;
+}
+
+.thank-you-panel p {
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.thank-you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0 18px;
+}
+
+.thank-you-note {
+  font-size: 0.95rem !important;
 }
 
 @media (max-width: 920px) {
