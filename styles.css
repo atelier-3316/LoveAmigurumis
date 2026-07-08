@@ -1,394 +1,1119 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LoveAmigurumis | Patrones PDF de crochet, kits y artesanía tejida</title>
-    <meta
-      name="description"
-      content="LoveAmigurumis vende patrones PDF de crochet, kits con estambre y productos artesanales sobre pedido. Amigurumis, prendas, accesorios y más creaciones tejidas."
-    />
-    <meta property="og:title" content="LoveAmigurumis | Patrones PDF de crochet, kits y artesanía tejida" />
-    <meta
-      property="og:description"
-      content="Compra patrones digitales de crochet o kits completos para tejer amigurumis, personajes, prendas y accesorios artesanales."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/hero-amigurumis.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Quicksand:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header" aria-label="Navegación principal">
-      <a class="brand" href="#inicio" aria-label="LoveAmigurumis inicio">
-        <img class="brand-mark" src="Love%20sin%20fondo.png" alt="" aria-hidden="true" />
-        <span>LoveAmigurumis</span>
-      </a>
-      <nav class="nav-links" aria-label="Secciones">
-        <a href="#catalogo">Catálogo</a>
-        <a href="#galeria">Galería</a>
-        <a href="#opciones">Opciones</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#carpetas">Carpetas</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </header>
+:root {
+  color-scheme: light;
+  --ink: #2b2a30;
+  --muted: #6c6470;
+  --paper: #fffaf7;
+  --surface: #ffffff;
+  --blush: #fde8e5;
+  --rose: #e96f81;
+  --rose-dark: #bd4258;
+  --berry: #7d4d69;
+  --teal: #2e918d;
+  --mint: #c9eadb;
+  --honey: #efb84f;
+  --lilac: #d9c8f0;
+  --line: rgba(43, 42, 48, 0.13);
+  --shadow: 0 20px 48px rgba(64, 44, 54, 0.14);
+}
 
-    <main>
-      <section class="hero" id="inicio">
-        <img
-          class="hero-image"
-          src="assets/hero-amigurumis.png"
-          alt="Amigurumis de crochet tejidos con estambres y ganchillos sobre una mesa de taller"
-        />
-        <div class="hero-overlay"></div>
-        <div class="hero-layout">
-          <div class="hero-content">
-            <img
-              class="hero-logo"
-              src="Love%20sin%20fondo.png"
-              alt="Logo LoVe con osito amigurumi abrazando una bola de estambre"
-            />
-            <p class="eyebrow">Patrones PDF de crochet, kits y artesanía tejida</p>
-            <h1>Patrones de crochet para crear amigurumis con encanto.</h1>
-            <p class="hero-copy">
-              LoveAmigurumis empieza con amigurumis de crochet, pero crecerá como una biblioteca de
-              patrones, kits y productos artesanales: animales, personajes, prendas, accesorios y
-              creaciones originales listas para venderse en formato digital o físico.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#catalogo">Ver patrones de crochet</a>
-              <a class="button secondary" href="mailto:artisticmione@gmail.com?subject=Quiero%20comprar%20en%20LoveAmigurumis">Comprar por correo</a>
-            </div>
-            <div class="hero-note">
-              <span>PDF de prueba desde $19 MXN</span>
-              <span>Crochet para principiantes</span>
-              <span>Kits aprox. $500-$600 MXN</span>
-              <span>Cursos con cupo limitado</span>
-              <span>Torreón, México</span>
-            </div>
-          </div>
+* {
+  box-sizing: border-box;
+}
 
-          <aside class="ad-panel" aria-label="Espacio publicitario para videos">
-            <div class="ad-label">Espacio publicitario</div>
-            <div class="media-window">
-              <span class="play-dot" aria-hidden="true"></span>
-              <strong>Videos de crochet y amigurumis</strong>
-              <p>Zona lista para reels, tutoriales, promociones o lanzamientos destacados de tejido.</p>
-            </div>
-            <div class="ad-strip">
-              <span>Nuevo patrón</span>
-              <span>Kit completo</span>
-              <span>Proceso real</span>
-            </div>
-          </aside>
-        </div>
-      </section>
+html {
+  scroll-behavior: smooth;
+}
 
-      <section class="section trust-band" aria-label="Beneficios">
-        <article>
-          <strong>Patrón de crochet en PDF</strong>
-          <span>Compra el archivo digital y teje con tus propios materiales desde casa.</span>
-        </article>
-        <article>
-          <strong>Kit completo</strong>
-          <span>O pide el paquete con estambre y materiales base para empezar sin buscar todo.</span>
-        </article>
-        <article>
-          <strong>Sobre pedido</strong>
-          <span>Para piezas físicas o cantidades especiales, el precio se estima por proyecto.</span>
-        </article>
-      </section>
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(253, 232, 229, 0.5), rgba(255, 250, 247, 0) 360px),
+    var(--paper);
+  color: var(--ink);
+  font-family: "Nunito", system-ui, sans-serif;
+}
 
-      <section class="section catalog" id="catalogo">
-        <div class="section-heading">
-          <p class="eyebrow">Catálogo comercial</p>
-          <h2>Patrones de crochet, kits y artesanía</h2>
-          <p>
-            La estructura ya está lista para crecer con cada patrón de crochet digitalizado. Cada
-            ficha podrá mostrar fotos reales, nivel de dificultad, materiales, precio del PDF y
-            precio del kit.
-          </p>
-        </div>
-        <div class="product-grid">
-          <article class="product-card product-card-real">
-            <a
-              class="product-photo-link"
-              href="https://buy.stripe.com/fZu3cv03ocT987lbvc8og00"
-              target="_blank"
-              rel="noopener"
-              aria-label="Comprar PDF León Valiente por Stripe"
-            >
-              <img
-                src="assets/leon-valiente.png"
-                alt="Portada del patrón PDF de crochet León Valiente de LoveAmigurumis"
-              />
-            </a>
-            <div class="product-body">
-              <div class="tag-row">
-                <span>PDF crochet</span>
-                <span>Producto piloto</span>
-              </div>
-              <h3>León Valiente</h3>
-              <p>Patrón PDF de crochet listo para comprar en Stripe y descargar después del pago.</p>
-              <div class="price-stack">
-                <strong>Patrón PDF digital $19 MXN</strong>
-                <span>Nivel principiante - 4 a 6 horas</span>
-              </div>
-              <div class="product-actions">
-                <a
-                  class="buy-link"
-                  href="https://buy.stripe.com/fZu3cv03ocT987lbvc8og00"
-                  target="_blank"
-                  rel="noopener"
-                >Comprar por $19 MXN</a>
-              </div>
-              <p class="purchase-note">
-                Compra segura con Stripe. Al pagar, el cliente registra su correo y telefono para recibir soporte del pedido.
-              </p>
-            </div>
-          </article>
-          <article class="product-card featured">
-            <div class="product-art bear" aria-hidden="true"><span></span></div>
-            <div class="product-body">
-              <div class="tag-row">
-                <span>Familia</span>
-                <span>Premium</span>
-              </div>
-              <h3>Ositos del Bosque</h3>
-              <p>Una familia completa para vender como set digital, kit o encargo especial.</p>
-              <div class="price-stack">
-                <strong>PDF desde $79</strong>
-                <span>Paquetes según cantidad</span>
-              </div>
-              <a class="text-link" href="mailto:artisticmione@gmail.com?subject=Comprar%20Ositos%20del%20Bosque">Solicitar</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <div class="product-art dino" aria-hidden="true"><span></span></div>
-            <div class="product-body">
-              <div class="tag-row">
-                <span>PDF crochet</span>
-                <span>Personaje</span>
-              </div>
-              <h3>Dino Pastel</h3>
-              <p>Diseño colorido para practicar formas redondas, detalles y combinaciones suaves.</p>
-              <div class="price-stack">
-                <strong>PDF desde $59</strong>
-                <span>Kit bajo disponibilidad</span>
-              </div>
-              <a class="text-link" href="mailto:artisticmione@gmail.com?subject=Comprar%20Dino%20Pastel">Solicitar</a>
-            </div>
-          </article>
-        </div>
-      </section>
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-      <section class="section gallery" id="galeria">
-        <div class="section-heading">
-          <p class="eyebrow">Fotos que venden</p>
-          <h2>Una vitrina para enamorar antes de comprar</h2>
-          <p>
-            Aquí irán las fotos increíbles de cada pieza terminada. La idea es que el cliente vea
-            el resultado, se imagine haciendo crochet y elija entre comprar el PDF o el kit completo.
-          </p>
-        </div>
-        <div class="gallery-grid">
-          <article class="photo-card large">
-            <span>Foto principal</span>
-            <h3>Producto terminado</h3>
-          </article>
-          <article class="photo-card">
-            <span>Detalle</span>
-            <h3>Puntadas y textura</h3>
-          </article>
-          <article class="photo-card">
-            <span>Materiales</span>
-            <h3>Estambres del kit</h3>
-          </article>
-          <article class="photo-card wide">
-            <span>Proceso</span>
-            <h3>De patrón a pieza final</h3>
-          </article>
-        </div>
-      </section>
+.site-header {
+  align-items: center;
+  backdrop-filter: blur(18px);
+  background: rgba(255, 250, 247, 0.9);
+  border-bottom: 1px solid rgba(43, 42, 48, 0.08);
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  left: 0;
+  padding: 14px clamp(18px, 5vw, 56px);
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateY(0);
+  transition:
+    transform 280ms ease,
+    box-shadow 220ms ease,
+    background-color 220ms ease;
+  z-index: 10;
+}
 
-      <section class="section purchase-options" id="opciones">
-        <div class="section-heading">
-          <p class="eyebrow">Formas de compra</p>
-          <h2>El mismo diseño, varias maneras de venderlo</h2>
-        </div>
-        <div class="offer-grid">
-          <article>
-            <span class="offer-icon">PDF</span>
-            <h3>Solo archivo digital</h3>
-            <p>El cliente paga poco por el ebook o patrón PDF de crochet y usa sus propios materiales.</p>
-            <strong>Desde $19 MXN en prueba</strong>
-          </article>
-          <article class="featured-offer">
-            <span class="offer-icon">KIT</span>
-            <h3>PDF + estambre</h3>
-            <p>Paquete con el patrón digital y materiales base para tener todo listo para empezar.</p>
-            <strong>Aprox. $500-$600 MXN</strong>
-          </article>
-          <article>
-            <span class="offer-icon">PED</span>
-            <h3>Producto sobre pedido</h3>
-            <p>Piezas físicas, colecciones o cantidades especiales con precio según complejidad.</p>
-            <strong>Cotización personalizada</strong>
-          </article>
-        </div>
-      </section>
+.site-header.is-hidden {
+  transform: translateY(calc(-100% - 12px));
+}
 
-      <section class="section courses" id="cursos">
-        <div class="course-panel">
-          <div class="course-copy">
-            <p class="eyebrow">Cursos en línea</p>
-            <h2>Clases con cupo limitado para aprender crochet desde cero.</h2>
-            <p>
-              Además de vender patrones y kits, LoveAmigurumis puede abrir cursos en línea por
-              proyecto: el cliente aparta su lugar, paga desde la app o canal de compra, entra a
-              una clase guiada de crochet y después puede recibir la grabación para repetir el
-              proceso.
-            </p>
-          </div>
-          <div class="course-grid">
-            <article>
-              <span>01</span>
-              <h3>Aparta tu lugar</h3>
-              <p>Cada curso tendrá una cantidad limitada de espacios para cuidar la atención y el ritmo.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Pago en línea</h3>
-              <p>El pago podrá integrarse a la app o canal de compra junto con PDFs, kits y pedidos.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Clase grabada</h3>
-              <p>La sesión se graba y más adelante se puede vender como descarga o curso bajo demanda.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+.site-header.is-scrolled {
+  background: rgba(255, 250, 247, 0.94);
+  box-shadow: 0 14px 30px rgba(64, 44, 54, 0.1);
+}
 
-      <section class="section families" id="carpetas">
-        <div class="section-heading">
-          <p class="eyebrow">Carpetas del catálogo</p>
-          <h2>Una biblioteca artesanal en crecimiento</h2>
-          <p>
-            Conforme digitalicen los patrones, cada carpeta puede convertirse en categoría con sus
-            propios productos, fotos, kits y ebooks.
-          </p>
-        </div>
-        <div class="family-grid">
-          <article>
-            <span>01</span>
-            <h3>Animales</h3>
-            <p>Osos, conejos, gatitos, perritos, dinosaurios, criaturas del bosque y marinos.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Personajes</h3>
-            <p>Muñecos originales, figuras temáticas, parejas, profesiones y colecciones especiales.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Prendas</h3>
-            <p>Ropa tejida, piezas de temporada y patrones de crochet que amplían la marca más allá del amigurumi.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Accesorios</h3>
-            <p>Llaveros, bolsitas, adornos, detalles pequenos y productos rapidos de elaborar.</p>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>Temporadas</h3>
-            <p>Navidad, San Valentín, Halloween, baby shower, regalos escolares y fechas especiales.</p>
-          </article>
-          <article>
-            <span>06</span>
-            <h3>Ebooks familiares</h3>
-            <p>Paquetes con varios patrones relacionados para vender colecciones más completas.</p>
-          </article>
-        </div>
-      </section>
+.brand {
+  align-items: center;
+  display: inline-flex;
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  gap: 10px;
+  white-space: nowrap;
+}
 
-      <section class="section buy-flow">
-        <div class="buy-copy">
-          <p class="eyebrow">Sistema de venta</p>
-          <h2>Primero catalogamos, luego escalamos.</h2>
-          <p>
-            La página queda preparada para empezar simple por correo y crecer hacia una tienda más
-            automatizada cuando haya fotos, PDFs finales, precios cerrados y redes sociales.
-          </p>
-        </div>
-        <div class="steps">
-          <article>
-            <span>01</span>
-            <h3>Fotografiar</h3>
-            <p>Tomar fotos atractivas del producto terminado, materiales, detalles y proceso.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Digitalizar</h3>
-            <p>Convertir cada patrón de crochet en PDF o ebook claro, bonito y fácil de seguir.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Vender y ensenar</h3>
-            <p>Ofrecer PDF económico, kit completo, producto sobre pedido o curso de crochet con cupo limitado.</p>
-          </article>
-        </div>
-      </section>
+.brand-mark {
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(189, 66, 88, 0.24);
+  height: 44px;
+  object-fit: contain;
+  object-position: center;
+  padding: 0;
+  width: 44px;
+}
 
-      <section class="contact" id="contacto">
-        <div>
-          <p class="eyebrow">Contacto</p>
-          <h2>Construyamos el catálogo pieza por pieza.</h2>
-          <p>
-            Escribe para comprar un patrón de crochet, pedir un kit, cotizar productos sobre pedido
-            o preguntar por una categoría específica.
-          </p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:artisticmione@gmail.com?subject=Pedido%20LoveAmigurumis">Enviar correo</a>
-          <a class="button secondary" href="#catalogo">Ver catálogo</a>
-        </div>
-      </section>
-    </main>
-    <script>
-      const siteHeader = document.querySelector(".site-header");
-      let lastScrollPosition = window.scrollY;
-      let ticking = false;
+.nav-links {
+  align-items: center;
+  display: flex;
+  gap: clamp(12px, 2.7vw, 26px);
+  font-size: 0.94rem;
+  font-weight: 900;
+}
 
-      const updateHeaderVisibility = () => {
-        const currentScrollPosition = window.scrollY;
-        const isScrollingDown = currentScrollPosition > lastScrollPosition;
-        const isPastHeroStart = currentScrollPosition > 120;
+.nav-links a {
+  border-bottom: 2px solid transparent;
+  padding: 7px 0;
+}
 
-        siteHeader.classList.toggle("is-scrolled", currentScrollPosition > 12);
-        siteHeader.classList.toggle("is-hidden", isScrollingDown && isPastHeroStart);
+.nav-links a:hover {
+  border-color: var(--rose);
+  color: var(--rose-dark);
+}
 
-        lastScrollPosition = Math.max(currentScrollPosition, 0);
-        ticking = false;
-      };
+.hero {
+  display: grid;
+  min-height: 94vh;
+  overflow: hidden;
+  place-items: center start;
+  position: relative;
+}
 
-      window.addEventListener(
-        "scroll",
-        () => {
-          if (!ticking) {
-            window.requestAnimationFrame(updateHeaderVisibility);
-            ticking = true;
-          }
-        },
-        { passive: true }
-      );
-    </script>
-  </body>
-</html>
+.hero-image,
+.hero-overlay {
+  inset: 0;
+  position: absolute;
+}
+
+.hero-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(255, 250, 247, 0.98) 0%, rgba(255, 250, 247, 0.9) 42%, rgba(255, 250, 247, 0.18) 78%),
+    linear-gradient(0deg, rgba(255, 250, 247, 0.96) 0%, rgba(255, 250, 247, 0) 32%);
+}
+
+.hero-layout {
+  align-items: center;
+  display: grid;
+  gap: clamp(28px, 5vw, 62px);
+  grid-template-columns: minmax(0, 1fr) minmax(310px, 420px);
+  max-width: 1280px;
+  margin-top: 42px;
+  padding: clamp(92px, 13vh, 150px) clamp(22px, 7vw, 78px) 92px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.hero-logo {
+  animation: logoEntrance 900ms cubic-bezier(0.19, 1, 0.22, 1) both, logoFloat 5.2s ease-in-out 1.1s infinite;
+  display: block;
+  filter: drop-shadow(0 18px 30px rgba(64, 44, 54, 0.16));
+  margin: 0 0 clamp(10px, 1.8vw, 20px) clamp(-8px, -1vw, -2px);
+  max-width: min(430px, 64vw);
+  width: 100%;
+}
+
+@keyframes logoEntrance {
+  from {
+    opacity: 0;
+    transform: translateX(-34px) translateY(18px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes logoFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.eyebrow {
+  color: var(--teal);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-family: "Quicksand", system-ui, sans-serif;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  line-height: 1;
+  margin-bottom: 22px;
+  max-width: 720px;
+}
+
+h2 {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  line-height: 1.04;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.hero-copy,
+.section-heading p,
+.buy-copy p,
+.contact p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.hero-actions,
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.button {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font: 900 0.98rem/1 "Nunito", system-ui, sans-serif;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 22px;
+}
+
+.button.primary {
+  background: var(--rose);
+  box-shadow: 0 14px 28px rgba(233, 111, 129, 0.28);
+  color: #fff;
+}
+
+.button.primary:hover {
+  background: var(--rose-dark);
+}
+
+.button.secondary {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.hero-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.hero-note span {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(43, 42, 48, 0.1);
+  border-radius: 999px;
+  color: var(--berry);
+  font-size: 0.88rem;
+  font-weight: 900;
+  padding: 8px 11px;
+}
+
+.ad-panel {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(43, 42, 48, 0.12);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.ad-label {
+  color: var(--berry);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.media-window {
+  align-content: center;
+  aspect-ratio: 16 / 10;
+  background:
+    linear-gradient(135deg, rgba(233, 111, 129, 0.72), rgba(46, 145, 141, 0.68)),
+    url("assets/hero-amigurumis.png") center / cover;
+  border-radius: 8px;
+  color: #fff;
+  display: grid;
+  gap: 8px;
+  min-height: 220px;
+  overflow: hidden;
+  padding: 24px;
+  position: relative;
+}
+
+.media-window::after {
+  background: linear-gradient(0deg, rgba(43, 42, 48, 0.46), rgba(43, 42, 48, 0));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.media-window > * {
+  position: relative;
+  z-index: 1;
+}
+
+.media-window strong {
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 1.45rem;
+  line-height: 1.1;
+}
+
+.media-window p {
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.play-dot {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  display: inline-block;
+  height: 48px;
+  position: relative;
+  width: 48px;
+}
+
+.play-dot::after {
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid var(--rose);
+  border-top: 10px solid transparent;
+  content: "";
+  left: 19px;
+  position: absolute;
+  top: 14px;
+}
+
+.ad-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.ad-strip span {
+  background: var(--blush);
+  border-radius: 999px;
+  color: var(--rose-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  padding: 7px 9px;
+}
+
+.section {
+  padding: clamp(58px, 8vw, 96px) clamp(18px, 5vw, 56px);
+}
+
+.trust-band {
+  background: #fff;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.trust-band article {
+  border-left: 4px solid var(--rose);
+  padding: 8px 22px;
+}
+
+.trust-band article:nth-child(2) {
+  border-color: var(--teal);
+}
+
+.trust-band article:nth-child(3) {
+  border-color: var(--honey);
+}
+
+.trust-band strong,
+.trust-band span {
+  display: block;
+}
+
+.trust-band strong {
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+
+.trust-band span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.section-heading {
+  margin: 0 auto 34px;
+  max-width: 1100px;
+}
+
+.section-heading p {
+  max-width: 760px;
+}
+
+.product-grid,
+.steps,
+.faq-grid,
+.offer-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.product-card,
+.offer-grid article,
+.family-grid article,
+.steps article,
+.faq-grid article,
+.photo-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 16px 38px rgba(64, 44, 54, 0.08);
+}
+
+.product-card {
+  overflow: hidden;
+}
+
+.product-card-real {
+  position: relative;
+}
+
+.product-card.featured {
+  border-color: rgba(233, 111, 129, 0.42);
+  box-shadow: var(--shadow);
+}
+
+.product-photo-link {
+  background: linear-gradient(135deg, #fff7f2, #fbe4e8);
+  display: block;
+  height: 330px;
+  overflow: hidden;
+}
+
+.product-photo-link img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 180ms ease;
+  width: 100%;
+}
+
+.product-photo-link:hover img {
+  transform: scale(1.025);
+}
+
+.product-art {
+  display: grid;
+  height: 230px;
+  place-items: center;
+  position: relative;
+}
+
+.product-art::before {
+  border-radius: 50%;
+  content: "";
+  height: 126px;
+  position: absolute;
+  width: 126px;
+}
+
+.product-art span {
+  border-radius: 48% 48% 42% 42%;
+  height: 96px;
+  position: relative;
+  width: 92px;
+  z-index: 1;
+}
+
+.product-art span::before,
+.product-art span::after {
+  content: "";
+  position: absolute;
+}
+
+.bunny {
+  background: #fef0f4;
+}
+
+.bunny::before {
+  background: var(--mint);
+}
+
+.bunny span {
+  background: #fff;
+  box-shadow: inset 0 -10px #f6d4d8;
+}
+
+.bunny span::before,
+.bunny span::after {
+  background: #fff;
+  border-radius: 50% 50% 42% 42%;
+  height: 98px;
+  top: -70px;
+  width: 28px;
+}
+
+.bunny span::before {
+  left: 13px;
+  transform: rotate(-12deg);
+}
+
+.bunny span::after {
+  right: 13px;
+  transform: rotate(12deg);
+}
+
+.bear {
+  background: #edf9f7;
+}
+
+.bear::before {
+  background: var(--honey);
+}
+
+.bear span {
+  background: #bd815d;
+  box-shadow: inset 0 -16px #7fc3bd;
+}
+
+.bear span::before,
+.bear span::after {
+  background: #bd815d;
+  border-radius: 50%;
+  height: 34px;
+  top: -10px;
+  width: 34px;
+}
+
+.bear span::before {
+  left: -10px;
+}
+
+.bear span::after {
+  right: -10px;
+}
+
+.dino {
+  background: #fff7dd;
+}
+
+.dino::before {
+  background: var(--lilac);
+}
+
+.dino span {
+  background: var(--teal);
+  border-radius: 58% 44% 48% 46%;
+  box-shadow: inset -13px -8px rgba(0, 0, 0, 0.12);
+}
+
+.dino span::before {
+  border-color: transparent transparent var(--honey);
+  border-style: solid;
+  border-width: 0 12px 18px;
+  left: 14px;
+  top: -11px;
+}
+
+.dino span::after {
+  background: var(--teal);
+  border-radius: 999px;
+  height: 34px;
+  right: -34px;
+  top: 28px;
+  transform: rotate(22deg);
+  width: 62px;
+}
+
+.product-body {
+  padding: 22px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tag-row span,
+.product-meta strong {
+  background: var(--blush);
+  border-radius: 999px;
+  color: var(--rose-dark);
+  font-size: 0.82rem;
+  font-weight: 900;
+  padding: 7px 10px;
+}
+
+.product-body p,
+.family-grid p,
+.steps p,
+.faq-grid p {
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.price-stack {
+  display: grid;
+  gap: 7px;
+  margin: 20px 0 14px;
+}
+
+.price-stack strong {
+  color: var(--rose-dark);
+  font-size: 1.05rem;
+}
+
+.price-stack span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.text-link {
+  color: var(--teal);
+  font-weight: 900;
+}
+
+.buy-link {
+  align-items: center;
+  background: var(--rose);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-weight: 900;
+  justify-content: center;
+  margin-top: 4px;
+  min-height: 42px;
+  padding: 0 16px;
+}
+
+.buy-link:hover {
+  background: var(--rose-dark);
+}
+
+.product-actions {
+  align-items: stretch;
+  display: grid;
+  gap: 10px;
+}
+
+.purchase-note {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.sample-link {
+  align-items: center;
+  border: 1px solid rgba(123, 78, 58, 0.22);
+  border-radius: 999px;
+  color: var(--ink);
+  display: inline-flex;
+  font-weight: 900;
+  justify-content: center;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.sample-link:hover {
+  background: rgba(255, 247, 242, 0.8);
+}
+
+.product-meta {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.product-meta a {
+  color: var(--teal);
+  font-weight: 900;
+}
+
+.gallery {
+  background: #fff;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1.2fr 0.8fr 0.8fr;
+  grid-template-rows: 220px 220px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.photo-card {
+  align-content: end;
+  background:
+    linear-gradient(0deg, rgba(43, 42, 48, 0.62), rgba(43, 42, 48, 0.06)),
+    radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.82), transparent 28%),
+    linear-gradient(135deg, var(--blush), var(--mint));
+  color: #fff;
+  display: grid;
+  min-height: 200px;
+  overflow: hidden;
+  padding: 22px;
+}
+
+.photo-card.large {
+  grid-row: span 2;
+}
+
+.photo-card.wide {
+  grid-column: span 2;
+}
+
+.photo-card span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.photo-card h3 {
+  font-family: "Quicksand", system-ui, sans-serif;
+  font-size: 1.55rem;
+  margin: 8px 0 0;
+}
+
+.purchase-options {
+  background: linear-gradient(135deg, #fff8ec 0%, #fef3f4 100%);
+}
+
+.offer-grid article {
+  padding: 26px;
+}
+
+.featured-offer {
+  border-color: rgba(233, 111, 129, 0.42);
+  box-shadow: var(--shadow);
+}
+
+.offer-icon {
+  align-items: center;
+  background: var(--berry);
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 900;
+  height: 48px;
+  justify-content: center;
+  margin-bottom: 18px;
+  width: 48px;
+}
+
+.offer-grid article:nth-child(2) .offer-icon {
+  background: var(--rose);
+}
+
+.offer-grid article:nth-child(3) .offer-icon {
+  background: var(--teal);
+}
+
+.offer-grid p {
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.offer-grid strong {
+  color: var(--rose-dark);
+}
+
+.courses {
+  background: #fff;
+}
+
+.course-panel {
+  background:
+    linear-gradient(135deg, rgba(125, 77, 105, 0.94), rgba(46, 145, 141, 0.9)),
+    url("assets/hero-amigurumis.png") center / cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  color: #fff;
+  display: grid;
+  gap: clamp(26px, 5vw, 54px);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  margin: 0 auto;
+  max-width: 1100px;
+  overflow: hidden;
+  padding: clamp(28px, 6vw, 52px);
+  position: relative;
+}
+
+.course-panel::after {
+  background: linear-gradient(90deg, rgba(43, 42, 48, 0.18), rgba(43, 42, 48, 0));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.course-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.course-copy .eyebrow {
+  color: var(--honey);
+}
+
+.course-copy p {
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.course-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.course-grid article {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.course-grid span {
+  color: var(--honey);
+  display: block;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.course-grid p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.55;
+}
+
+.families {
+  background: linear-gradient(135deg, #fef3f4 0%, #eef8f4 100%);
+}
+
+.family-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.family-grid article,
+.steps article,
+.faq-grid article {
+  padding: 24px;
+}
+
+.family-grid span,
+.steps span {
+  color: var(--rose-dark);
+  display: block;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.buy-flow {
+  align-items: start;
+  background: #fff;
+  display: grid;
+  gap: clamp(28px, 5vw, 58px);
+  grid-template-columns: minmax(250px, 0.75fr) minmax(0, 1.4fr);
+}
+
+.buy-copy {
+  max-width: 560px;
+}
+
+.steps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.steps article {
+  border-top: 4px solid var(--berry);
+}
+
+.steps article:nth-child(2) {
+  border-color: var(--rose);
+}
+
+.steps article:nth-child(3) {
+  border-color: var(--teal);
+}
+
+.faq-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact {
+  align-items: center;
+  background: var(--ink);
+  color: #fff;
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  padding: clamp(48px, 7vw, 72px) clamp(18px, 5vw, 56px);
+}
+
+.contact .eyebrow {
+  color: var(--honey);
+}
+
+.contact p {
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 0;
+  max-width: 690px;
+}
+
+.contact .button.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.thank-you-page {
+  align-items: center;
+  background:
+    radial-gradient(circle at top left, rgba(233, 111, 129, 0.18), transparent 32%),
+    linear-gradient(135deg, #fff7f2, #f8e6dc 52%, #eef5ef);
+  display: flex;
+  min-height: 100vh;
+  padding: 28px;
+}
+
+.thank-you-panel {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(123, 78, 58, 0.16);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+  max-width: 720px;
+  padding: clamp(28px, 7vw, 64px);
+}
+
+.thank-you-panel h1 {
+  color: var(--ink);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.3rem, 7vw, 4.4rem);
+  line-height: 0.98;
+  margin: 0 0 18px;
+}
+
+.thank-you-panel p {
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.thank-you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0 18px;
+}
+
+.thank-you-note {
+  font-size: 0.95rem !important;
+}
+
+@media (max-width: 920px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 18px;
+  }
+
+  .nav-links {
+    font-size: 0.9rem;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    width: 100%;
+  }
+
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(255, 250, 247, 0.97) 0%, rgba(255, 250, 247, 0.78) 66%, rgba(255, 250, 247, 0.2) 100%),
+      linear-gradient(0deg, rgba(255, 250, 247, 0.96) 0%, rgba(255, 250, 247, 0) 30%);
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    padding-top: 142px;
+  }
+
+  .hero-logo {
+    max-width: min(360px, 82vw);
+  }
+
+  .trust-band,
+  .product-grid,
+  .offer-grid,
+  .course-panel,
+  .family-grid,
+  .steps,
+  .buy-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo-card.large,
+  .photo-card.wide {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 2.65rem;
+  }
+
+  .hero-copy,
+  .section-heading p,
+  .buy-copy p,
+  .contact p {
+    font-size: 1rem;
+  }
+
+  .hero-actions,
+  .contact-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-logo {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min(320px, 88vw);
+  }
+
+  .product-art {
+    height: 198px;
+  }
+
+  .product-meta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .faq-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-card.large,
+  .photo-card.wide {
+    grid-column: span 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+
+  .hero-logo {
+    animation: none;
+  }
+}
